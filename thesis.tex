@@ -1,0 +1,83 @@
+% Document Type: LaTeX
+% Master File: thesis.tex
+\documentclass[12pt,a4paper]{report}
+\usepackage{fcthesis}         %estilo da tese (``uptese'' --> portugues)
+%\usepackage[portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[portuges]{babel}
+
+%\usepackage{epsf}             %incluir figuras encapsulated postscript
+%\usepackage{amstex}          
+%\pagestyle{myheadings}
+
+\usepackage{graphicx} %to place images and change how they show
+\usepackage{enumitem} %to enumerate using letters
+\usepackage{float} %to fix the place where images show, using option [H]
+\usepackage{url} %to cite from urls in .bib
+\usepackage{wrapfig} %to put text around images (not working)
+\usepackage{hyperref} %to hyperlink sections in the pdf
+\usepackage{acronym}  %for the acronyms
+
+
+%packages for the code
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{White},   
+    commentstyle=\color{Green},
+    keywordstyle=\color{Blue},
+    numberstyle=\tiny\color{Gray},
+    stringstyle=\color{Purple},
+    basicstyle=\small\ttfamily,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+
+
+%\includeonly{
+    
+%}
+
+\begin{document}
+
+\title{Relatório de Gestão de Segurança e Informação}
+
+
+\author{Guilherme Martins Amado 201608528}
+\department{Departamento de Ciência de Computadores \\ Faculdade de
+Ciências da Universidade do Porto}
+
+\submitdate{Setembro de 2019}
+
+%\supervisor{Manuel Barbosa}
+%\cosupervisor{Nome Completo (se aplicável, retirar caso contrário)}
+
+\beforepreface
+%\dedicationpage{(Dedicatória opcional...)}
+%\include{acknowledgements}
+%\include{preface}
+%\include{abstract}
+\afterpreface
+
+% end of thesis preamble
+
+\include{sumario_executivo}
+\include{chapter2}
+
+%\renewcommand{\bibname}{References}
+%\addcontentsline{toc}{chapter}{References}
+%\bibliographystyle{plain}
+%\bibliography{refs}
+
+\end{document}
